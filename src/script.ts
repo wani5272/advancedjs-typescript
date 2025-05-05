@@ -65,8 +65,3 @@ function fail() {
 function infiniteLoop(): never {
   while (true) {}
 }
-
-declare function create(o: object): void;
-create({ prop: 0 });
-create({});
-create({ anotherPropr: "yes" });
