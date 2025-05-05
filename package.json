@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start-ts": "tsc --watch"
+  },
   "devDependencies": {
     "typescript": "^5.8.3"
   }
