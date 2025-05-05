@@ -39,7 +39,7 @@ enum ColorDifferentValues {
 let newC: ColorDifferentValues = ColorDifferentValues.Green;
 console.log("Green");
 let someVar: any;
-someVar.push("a");
+
 if (Array.isArray(someVar)) {
   someVar.push("a");
 }
@@ -65,8 +65,8 @@ function fail() {
 function infiniteLoop(): never {
   while (true) {}
 }
-declare function create(o: object): void;
 
+declare function create(o: object): void;
 create({ prop: 0 });
 create({});
 create({ anotherPropr: "yes" });
