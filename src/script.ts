@@ -106,9 +106,3 @@ const cats: Record<CatName, CatInfo> = {
 
 console.log(cats.boris);
 console.log(cats);
-function updateCat(cat: CatName, fieldsToUpdate: Partial<CatInfo>);
-const cats2 = updateCat("boris", {
-  age: 100,
-});
-console.log(cats.boris);
-console.log(cats2);
