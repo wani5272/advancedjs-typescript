@@ -73,7 +73,7 @@ interface Todo {
 function updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {
   return { ...todo, ...fieldsToUpdate };
 }
-function failupdateTodo(todo: Todo, fieldsToUpdate: Todo) {
+function completeupdateTodo(todo: Todo, fieldsToUpdate: Todo) {
   return { ...todo, ...fieldsToUpdate };
 }
 const todo1 = {
@@ -84,7 +84,7 @@ const todo1 = {
 const todo2 = updateTodo(todo1, {
   description: "throw out trash",
 });
-const todo3 = failupdateTodo(todo1, {
+const todo3 = completeupdateTodo(todo1, {
   title: "cleam up desk",
   description: "throw out trash",
 });
