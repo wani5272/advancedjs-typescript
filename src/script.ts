@@ -86,7 +86,7 @@ const todo2 = updateTodo(todo1, {
 });
 const todo3 = failupdateTodo(todo1, {
   title: "cleam up desk",
-  description: "clear clutter",
+  description: "throw out trash",
 });
 console.log(todo1);
 console.log(todo2);
