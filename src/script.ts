@@ -91,7 +91,7 @@ const todo3 = completeupdateTodo(todo1, {
 console.log(todo1);
 console.log(todo2);
 console.log(todo3);
-type CatName = "miffy" | "boris" | "mordred";
+type CatName = "miffy" | "boris" | "mordred" | "neko" | "boris2";
 
 interface CatInfo {
   age: number;
@@ -102,7 +102,49 @@ const cats: Record<CatName, CatInfo> = {
   miffy: { age: 10, breed: "Persian" },
   boris: { age: 5, breed: "Maine Coon" },
   mordred: { age: 16, breed: "British Shorthair" },
+  neko: { age: 16, breed: "" },
+  boris2: { age: 0, breed: "" },
+};
+cats.boris2 = cats.boris;
+console.log(cats.boris.age);
+console.log(cats);
+interface Todo {
+  title: string;
+  description: string;
+  completed: boolean;
+}
+
+type TodoPreview = Pick<Todo, "title" | "completed">;
+
+const todo: TodoPreview = {
+  title: "Clean room",
+  completed: false,
 };
 
-console.log(cats.boris);
-console.log(cats);
+todo;
+console.log(todo);
+interface Todo {
+  title: string;
+  description: string;
+  completed: boolean;
+  createdAt: number;
+}
+
+type TodoPreviewtwo = Omit<Todo, "description">;
+
+const todotwo: TodoPreviewtwo = {
+  title: "Clean room",
+  completed: false,
+  createdAt: 1615544252770,
+};
+
+console.log(todotwo);
+
+type TodoInfo = Omit<Todo, "completed" | "createdAt">;
+
+const todoInfo: TodoInfo = {
+  title: "Pick up kids",
+  description: "Kindergarten closes at 5pm",
+};
+
+console.log(todoInfo);
