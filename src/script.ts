@@ -80,7 +80,7 @@ const todo1 = {
   title: "organize desk",
   description: "clear clutter",
 };
-
+/*
 const todo2 = updateTodo(todo1, {
   description: "throw out trash",
 });
@@ -88,9 +88,11 @@ const todo3 = completeupdateTodo(todo1, {
   title: "cleam up desk",
   description: "throw out trash",
 });
+
 console.log(todo1);
 console.log(todo2);
 console.log(todo3);
+*/
 type CatName = "miffy" | "boris" | "mordred" | "neko" | "boris2";
 
 interface CatInfo {
@@ -106,6 +108,7 @@ const cats: Record<CatName, CatInfo> = {
   boris2: { age: 0, breed: "" },
 };
 cats.boris2 = cats.boris;
+
 console.log(cats.boris.age);
 console.log(cats);
 interface Todo {
@@ -140,11 +143,11 @@ const todotwo: TodoPreviewtwo = {
 
 console.log(todotwo);
 
-type TodoInfo = Omit<Todo, "completed" | "createdAt">;
+type TodoInfotwo = Omit<Todo, "completed" | "createdAt">;
 
-const todoInfo: TodoInfo = {
+const todoInfotwo: TodoInfotwo = {
   title: "Pick up kids",
   description: "Kindergarten closes at 5pm",
 };
-
-console.log(todoInfo);
+type notef = "s";
+type importantnote = Uppercase<notef>;
