@@ -1,6 +1,9 @@
 {
   "scripts": {
     "start-ts": "tsc --watch",
+    "forcedev": "vite",
+    "forcebuild": "vite build",
+    "forcepreview": "vite preview",
     "dev": "tsc && vite",
     "build": "tsc && vite build",
     "preview": "tsc && vite preview"
